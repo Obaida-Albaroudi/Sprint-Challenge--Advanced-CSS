@@ -1,1 +1,45 @@
 // Navigation code here
+
+.navigation{
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 2%;
+    .flex(column);
+    align-items: center;
+    justify-content: center;
+    padding: .5%;
+    background: @nav-border;
+
+    h1{
+        font-size: 4rem;
+
+        @media @phone{
+            font-size: 3.5rem;
+        }
+    }//title portion of the .navigation class. It is isolated from the nav bar but still in the same section/
+
+    nav{
+        .flex(row);
+        justify-content: space-evenly;
+        font-size: 1.8rem;
+        width: 30%;
+        padding: 1%;
+
+        a{
+            text-decoration: none;
+            color: @nav-font;
+        }//represents the different selections for the nav bar.
+
+        @media @phone{
+            width:80%;
+            font-size: 1.6;
+            padding: 2%;
+        }
+
+    }//The navigation bar portion of .navigation class.
+    @media @phone{
+        margin:0;
+        padding:1.5%;
+    }
+
+}//the end of the whole top section (.navigvation class).

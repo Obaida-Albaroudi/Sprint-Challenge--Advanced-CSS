@@ -32,7 +32,7 @@
         width: 100%;
       }
     }
-  }
+  }//introduction section
 
   .space-images {
     display: flex;
@@ -45,20 +45,20 @@
 
       }
 
-    }
+    }//first picture and the one that stays in mobile.
 
     .sky{
       @media @phone{
         display: none;
       }
-    }
+    }//second picture.
 
     .launch{
       @media @phone{
         display: none;
       }
 
-    }
+    }//third picture.
 
 
     img {
@@ -66,8 +66,9 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+    }//the general tag for all three pictures.
+  }//represents the three pictures in the middle. The @media makes it so that only
+   //the first picture stays in the mobile version.
 
   .visit-planets {
     padding: 15px;
@@ -80,7 +81,7 @@
         margin-top: 8px;
         
       }
-    }
+    }//title
 
     p {
       margin-top: 13px;
@@ -89,8 +90,8 @@
         .paddingtext();
         
       }
-    }
-  }
+    }//paragraph
+  }//This is the middle section titles Can we visit planets. It is only text.
 
   .walk {
     margin-top: 60px;
@@ -104,22 +105,22 @@
       align-items: center;
       .paddingtext();
       margin-top:30px;
-  }
+    }//mobile version of this last section. We needed the picture to be up top so we column reversed this section.
 
     .walk-text {
       width: 50%;
       @media @phone{
         .walkwidth();
         .paddingtext();
-      }
+      }//the text right by the picture of the astronaut. Needed the text to fit the mobile version cleanly.
 
       h3 {
         margin-bottom: 10px;
-      }
+      }//title in this section
 
       p {
         margin-bottom: 26px;
-      }
+      }//paragraph in this section
 
       .btn {
         .button(black,white);
@@ -136,7 +137,16 @@
         }
 
       }
-    }
+      .btn:hover{
+        background-color: red;
+        color: blue;
+
+        @media @phone{
+          background-color: lightblue;
+          color: darkgrey;
+        }
+      }
+    }//represents the sign up button. We made it so that the color changes when you hover and the size changes for mobile.
 
     .walk-img {
       width: 46%;
@@ -152,7 +162,7 @@
         height: auto;
         border-radius: 10px;
       }
-    }
-  }
+    }//image next to the text at the bottom. We adjusted it to fit the mobile version.
+  }//this was the last section. Summary broken down for each area already.
   
 }// home

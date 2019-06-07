@@ -343,6 +343,16 @@ footer {
     padding: 5%;
   }
 }
+.home .walk .walk-text .btn:hover {
+  background-color: red;
+  color: blue;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    background-color: lightblue;
+    color: darkgrey;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;

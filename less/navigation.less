@@ -3,21 +3,25 @@
 .navigation{
     width: 100%;
     margin-top: 1%;
-    margin-left: 1%;
+    margin-left: 2%;
     .flex(column);
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    padding: .5%;
     background: @nav-border;
 
     h1{
         font-size: 4rem;
+
+        @media @phone{
+            font-size: 3.5rem;
+        }
     }
 
     nav{
         .flex(row);
         justify-content: space-evenly;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         width: 30%;
         padding: 1%;
 
@@ -26,5 +30,16 @@
             color: @nav-font;
         }
 
+        @media @phone{
+            width:80%;
+            font-size: 1.6;
+            padding: 2%;
+        }
+
     }
+    @media @phone{
+        margin:0;
+        padding:1.5%;
+    }
+
 }
